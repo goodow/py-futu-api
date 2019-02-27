@@ -1,13 +1,14 @@
 syntax = "proto2";
 package Qot_GetHistoryKL;
+option java_package = "com.goodow.quant.proto";
 
-import "Common.proto";
-import "Qot_Common.proto";
+import "futu/common/pb/Common.proto";
+import "futu/common/pb/Qot_Common.proto";
 
 message C2S
 {
-	required int32 rehabType = 1; //Qot_Common.RehabType,复权类型
-	required int32 klType = 2; //Qot_Common.KLType,K线类型
+	required Qot_Common.RehabType rehabType = 1; //Qot_Common.RehabType,复权类型
+	required Qot_Common.KLType klType = 2; //Qot_Common.KLType,K线类型
 	required Qot_Common.Security security = 3; //股票市场以及股票代码
 	required string beginTime = 4; //开始时间字符串
 	required string endTime = 5; //结束时间字符串

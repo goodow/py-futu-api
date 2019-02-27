@@ -1,8 +1,9 @@
 syntax = "proto2";
 package Qot_GetRehab;
+option java_package = "com.goodow.quant.proto";
 
-import "Common.proto";
-import "Qot_Common.proto";
+import "futu/common/pb/Common.proto";
+import "futu/common/pb/Qot_Common.proto";
 
 message C2S
 {

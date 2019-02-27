@@ -1,5 +1,6 @@
 syntax = "proto2";
 package Common;
+option java_package = "com.goodow.quant.proto";
 
 //返回结果
 enum RetType
