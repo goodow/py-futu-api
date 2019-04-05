@@ -401,11 +401,11 @@ message TimeShare
 message SecurityStaticBasic
 {
 	required Qot_Common.Security security = 1; //股票
-	required int64 id = 2; //股票ID
-	required int32 lotSize = 3; //每手数量,期权类型表示一份合约的股数
-	required SecurityType secType = 4; //Qot_Common.SecurityType,股票类型
-	required string name = 5; //股票名字
-	required string listTime = 6; //上市时间字符串
+	optional int64 id = 2; //股票ID
+	optional int32 lotSize = 3; //每手数量,期权类型表示一份合约的股数
+	optional SecurityType secType = 4; //Qot_Common.SecurityType,股票类型
+	optional string name = 5; //股票名字
+	optional string listTime = 6; //上市时间字符串
 	optional bool delisting = 7; //是否退市
 	optional double listTimestamp = 8; //上市时间戳
 }
